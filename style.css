@@ -16,17 +16,26 @@
   margin: auto;
   padding: 35px 0;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
+  
+}
+.navbar ul {
+  width: 85%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  justify-content: flex-end;
+
 }
 .logo {
   width: 180px;
   cursor: pointer;
   border-radius: 50%;
+  justify-content: flex-start;
 }
 .navbar ul li {
   list-style: none;
-  display: inline-block;
+  display: flex;
   margin: 0 15px;
   position: relative;
 }
@@ -178,5 +187,14 @@ button:hover {
 }
 .playlistcontent {
   color: #fadfdf;
+  text-align: left;
+  display: inline-block;
+  
+}
+.h1text {
+  color: #fadfdf;
   text-align: center;
+}
+.playlistcontentright{
+  text-align: right;
 }
