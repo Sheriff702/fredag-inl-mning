@@ -3,7 +3,8 @@
   padding: 0;
   font-family: sans-serif;
 }
-.banner {
+
+body {
   width: 100%;
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
@@ -14,10 +15,9 @@
 .navbar {
   width: 85%;
   margin: auto;
-  padding: 35px 0;
+  
   display: flex;
   justify-content: flex-start;
-  
 }
 .navbar ul {
   width: 85%;
@@ -25,14 +25,21 @@
   padding: 35px 0;
   display: flex;
   justify-content: flex-end;
-
 }
 .logo {
-  width: 180px;
+  width: 100px;
   cursor: pointer;
   border-radius: 50%;
   justify-content: flex-start;
+  padding-top: 50px;
 }
+.searchbar{
+  border-radius: 45px;
+  box-shadow: #927d49;
+  padding: 2px;
+  border: 2px dotted greenyellow;
+}
+
 .navbar ul li {
   list-style: none;
   display: flex;
@@ -64,28 +71,35 @@
   transform: translateY(-50%);
   text-align: center;
   color: #fff;
+  margin-top: 100px;
 }
-.content h1 {
-  font-size: 70px;
-  margin-top: 80px;
+.front {
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+  
+ 
 }
 .content p {
-  margin: 20px auto;
+ 
+}
+.paragraph{
   font-weight: 100;
   line-height: 25px;
   font-size: x-large;
+  padding-top: 250px;
 }
-em{
+em {
   color: greenyellow;
 }
 button {
   width: 200px;
   padding: 15px 0;
-  text-align: center;
+  text-align: center;  
   margin: 20px 10px;
   border-radius: 25px;
   font-weight: bold;
-  border: 2px solid #009687;
+  border: 2px solid greenyellow;
   background: transparent;
   color: #fff;
   cursor: pointer;
@@ -93,7 +107,7 @@ button {
   overflow: hidden;
 }
 span {
-  background: #009687;
+  background: greenyellow;
   height: 100%;
   width: 0;
   border-radius: 25px;
@@ -102,6 +116,10 @@ span {
   bottom: 0;
   z-index: -1;
   transition: 0.5s;
+  
+}
+.buttton{
+  padding-top: px;
 }
 button:hover span {
   width: 100%;
@@ -145,8 +163,6 @@ button:hover {
   border-top-right-radius: 35%;
   border-bottom-left-radius: 20%;
   border-bottom-right-radius: 20%;
- 
-  
 }
 .contactnavbar {
   width: 85%;
@@ -156,11 +172,7 @@ button:hover {
   align-items: center;
   justify-content: space-between;
 }
-.logo {
-  width: 180px;
-  cursor: pointer;
-  border-radius: 50%;
-}
+
 .contactnavbar ul li {
   list-style: none;
   display: inline-block;
@@ -185,16 +197,96 @@ button:hover {
 .contactnavbar ul li:hover::after {
   width: 100%;
 }
-.playlistcontent {
-  color: #fadfdf;
-  text-align: left;
-  display: inline-block;
-  
-}
+
 .h1text {
   color: #fadfdf;
   text-align: center;
 }
-.playlistcontentright{
-  text-align: right;
+
+.soundcloud-container {
+  font-family: Interstate, Lucida Grande, Lucida Sans Unicode, Lucida Sans,
+    Garuda, Verdana, Tahoma, sans-serif;
+  font-weight: 100;
+}
+
+.soundcloud-info {
+  font-size: 10px;
+  color: #cccccc;
+  word-break: normal;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-top: 10px;
+}
+
+.soundcloud-info a {
+  color: #cccccc;
+  text-decoration: none;
+}
+
+.spotify-embed iframe {
+  width: 100%;
+  height: 166px;
+}
+
+.playlists-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-iframe {
+  border-radius: 12px;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+svg {
+  font-family: "Russo One", sans-serif;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+svg text {
+  text-transform: uppercase;
+  animation: stroke 5s infinite alternate;
+  stroke-width: 5;
+  stroke: #0b0904;
+  font-size: 140px;
+}
+@keyframes stroke {
+  0% {
+    fill: rgba(221, 186, 79, 0);
+    stroke: rgb(15, 15, 14);
+    stroke-dashoffset: 25%;
+    stroke-dasharray: 0 50%;
+    stroke-width: 2;
+  }
+
+  70% {
+    fill: rgba(211, 175, 53, 0);
+    stroke: greenyellow;
+  }
+
+  80% {
+    fill: rgba(201, 164, 27, 0);
+    stroke: rgb(161, 120, 238);
+    stroke-width: 3;
+  }
+
+  100% {
+    fill: greenyellow;
+    stroke: rgba(54, 95, 160, 0);
+    stroke-dashoffset: -25%;
+    stroke-dasharray: 50% 0;
+    stroke-width: 0;
+  }
 }
