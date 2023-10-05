@@ -84,7 +84,7 @@ body {
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 }
 
 
@@ -337,7 +337,7 @@ footer {
     /* Adjust the viewBox for smaller screens */
     width: 100%;
     height: auto;
-    viewBox:"0 0 2000 300"; /* Adjust the values as needed */
+    
   }
   footer {
     padding: 10px; 
