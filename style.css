@@ -33,12 +33,7 @@ body {
   justify-content: flex-start;
   padding-top: 20px;
 }
-.searchbar {
-  border-radius: 45px;
-  box-shadow: #927d49;
-  padding: 2px;
-  border: 2px dotted greenyellow;
-}
+
 .text {
   color: #fff;
 }
@@ -89,47 +84,7 @@ body {
   text-transform: uppercase;
 }
 
-/* Add a media query for smaller screens to stack the navbar links vertically */
-@media (max-width: 770px) {
-  .navbar .nav-links {
-    display: none; /* Hide the links by default on smaller screens */
-    float: none;
-    text-align: center; /* Center-align links */
-    width: 100%; /* Full width for centered links */
-    padding-top: 10px; /* Add padding for spacing */
-  }
 
-  .navbar .nav-links.active {
-    display: block; /* Display links when the menu is active */
-  }
-
-  .navbar .nav-links li {
-    display: block; /* Stack links vertically */
-    margin-right: 0; /* Remove right margin */
-    margin-bottom: 10px; /* Add spacing between links */
-  }
-
-  .navbar .logo {
-    float: none;
-    margin: 0 auto; /* Center-align the logo */
-  }
-  svg text {
-    font-size: 50px;
-  }
-  .playlists-container {
-    /* Change the grid layout for smaller screens */
-    grid-template-columns: 1fr; /* Stack items vertically */
-    grid-auto-flow: dense;
-    
-  }
-
-  .playlists-container-playlist {
-    width: 100%;
-    margin-bottom: 30px; /* Add some spacing between stacked iframes */
-    flex-wrap: wrap;
-   flex-direction: row;
-  }
-}
 
 .content {
   width: 100%;
@@ -143,7 +98,6 @@ body {
 .front {
   display: flex;
   justify-content: center;
-  z-index: 1;
   flex-wrap: wrap;
 }
 .paragraph {
@@ -204,13 +158,11 @@ button:hover {
 }
 .contactcontent {
   width: 100%;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
   text-align: center;
   color: #22e81f;
   pointer-events: none;
   text-decoration: underline;
+ 
 }
 .playlisthead h1 {
   font-size: 100px;
@@ -256,20 +208,14 @@ button:hover {
   border-radius: 12px;
 }
 
-@keyframes gradientAnimation {
-  0% {
-    background-position: 0% 0%;
-  }
-  100% {
-    background-position: 100% 100%;
-  }
-}
+
 
 svg {
   font-family: "Russo One", sans-serif;
   position: relative;
   width: 100%;
   height: 100%;
+  flex-wrap: wrap;
 }
 svg text {
   text-transform: uppercase;
@@ -277,6 +223,34 @@ svg text {
   stroke-width: 5;
   stroke: #0b0904;
   font-size: 140px;
+  white-space: nowrap;
+}
+
+section {
+  margin: 20px;
+  
+}
+
+footer {
+  text-align: start;
+  padding: 20px;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
 }
 @keyframes stroke {
   0% {
@@ -306,23 +280,67 @@ svg text {
     stroke-width: 0;
   }
 }
-#section2 {
-  padding-top: 15rem ;
-}
+/* Add a media query for smaller screens to stack the navbar links vertically */
+@media (max-width: 770px) {
+  .navbar .nav-links {
+    display: none; /* Hide the links by default on smaller screens */
+    float: none;
+    text-align: center; /* Center-align links */
+    width: 100%; /* Full width for centered links */
+    padding-top: 10px; /* Add padding for spacing */
+  }
 
-#section3 {
-  padding-top: 20rem;
-}
-footer {
-  text-align: center;
-  padding: 20px;
-}
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
-  cursor: pointer;
+  .navbar .nav-links.active {
+    display: block; /* Display links when the menu is active */
+  }
+
+  .navbar .nav-links li {
+    display: block; /* Stack links vertically */
+    margin-right: 0; /* Remove right margin */
+    margin-bottom: 10px; /* Add spacing between links */
+  }
+
+  .navbar .logo {
+    float: none;
+    margin: 0 auto; /* Center-align the logo */
+  }
+  svg text {
+    font-size: 50px;
+  }
+  .playlists-container {
+    /* Change the grid layout for smaller screens */
+    grid-template-columns: 1fr; /* Stack items vertically */
+    grid-auto-flow: dense;
+    
+  }
+
+  .playlists-container-playlist {
+    width: 100%;
+    margin-bottom: 30px; 
+    flex-wrap: wrap;
+   flex-direction: row;
+  }
+  .paragraph{
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  svg text {
+    font-size: 210px;
+    
+    height: 100%; 
+    white-space: normal;
+  }
+  .front svg {
+    /* Adjust the viewBox for smaller screens */
+    width: 100%;
+    height: auto;
+    viewBox:"0 0 2000 300"; /* Adjust the values as needed */
+  }
+  footer {
+    padding: 10px; 
+  }
+  .fa {
+    font-size: 20px; /* Decrease font size for social icons */
+    padding: 10px; /* Reduce padding for social icons */
+  }
 }
