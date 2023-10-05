@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
-
+    <link
+      href="https://fonts.googleapis.com/css?family=Russo+One"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>AMD's Website</title>
   </head>
@@ -13,30 +16,124 @@
     <div class="banner">
       <div class="navbar">
         <img src="amd new.png" alt="logo" class="logo" />
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="playlist.html">Playlists</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li ></li> <form action="text"> Search <input class="searchbar" type="text" name="searchbar" id="searchbar"></form>
+        <ul class="nav-links">
+          <li><a href="#section1">Home</a></li>
+          <p class="navbarline">|</p>
+          <li><a href="#section3">Contact</a></li>
+         
+          
         </ul>
       </div>
-      <div class="content">
-        <svg class="front" viewBox="0 0 3200 300">
-          <text x="50%" y="50%" dy=".35em" text-anchor="middle">
-            Welcome to AMD's Website
-          </text>
-        </svg>	
-        <div class="paragraph">
-          <p>
-            Always the latest hits on this planet! <br /><em
-              >Spinning Beats & Keeping the Peace</em>
-          </p>
-
-        </div>
-        
-        <div class="buttton"><button type="button"><span></span>Press here for some music</button></div>
-        
-      </div>
     </div>
+
+    <main>
+      <section id="section1">
+        <!-- Content for the first section -->
+        <div class="content">
+          <svg class="front" viewBox="0 0 3200 300">
+            <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+              Welcome to AMD's Website
+            </text>
+          </svg>
+          <div class="paragraph">
+            <p>
+              Always the latest hits on this planet! <br /><em
+                >Spinning Beats & Keeping the Peace</em
+              >
+            </p>
+          </div>
+
+          <div class="buttton">
+            <button type="button">
+              <span></span><a href="#section2">Press here for some music</a>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section id="section2">
+        <!-- Content for the second section -->
+        <div >
+          <h1 class="h1text">PLAYLISTS </h1>
+          <h3 class="h3text">
+            HERE ARE SOME OF AMD'S FAVORITE PLAYLISTS, MIXTAPES AND MASHUPS
+          </h3>
+        </div>
+        <div class="playlists-container">
+          <div class="playlists-container-playlist">
+            <iframe
+              width="100%"
+              height="166"
+              scrolling="no"
+              frameborder="no"
+              allow="autoplay"
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/400839057&color=%230c0404&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+            ></iframe>
+            <iframe
+              width="100%"
+              height="166"
+              scrolling="no"
+              frameborder="no"
+              allow="autoplay"
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/383500805&color=%230c0404&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+            ></iframe>
+            <iframe
+              width="100%"
+              height="166"
+              scrolling="no"
+              frameborder="no"
+              allow="autoplay"
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/209812039&color=%230c0404&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+            ></iframe>
+          </div>
+          <div class="playlists-container-playlist">
+            <iframe
+              src="https://open.spotify.com/embed/playlist/4PFT2iFEAmJVAKyS9t0toN?utm_source=generator"
+              width="100%"
+              height="170"
+              frameborder="0"
+              allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+            ></iframe>
+            <iframe
+              class="custom-iframe"
+              src="https://open.spotify.com/embed/playlist/16gXsmg48MdRTqCLNnx9Cu?utm_source=generator"
+              width="100%"
+              height="170"
+              frameborder="0"
+              allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy
+            "
+            ></iframe>
+            <iframe
+              class="custom-iframe"
+              src="https://open.spotify.com/embed/playlist/4k7mB7gFAY4CGqqDJtZA4s?utm_source=generator"
+              width="100%"
+              height="170"
+              frameborder="0"
+              allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+      <section id="section3">
+        <!-- Content for the third section -->
+        <div class="contactcontent">
+          <h1>Here is the contact information to the company</h1>
+          <ul>
+            <ol>Namn: Ahmed Sharif</ol>
+            <ol>Telefon: 0012 345 678</ol>
+            <ol>AMD@hypercity.se</ol>
+          </ul>
+          <img class="ceo" src="CEO1.JPG" alt="ceo" />
+        </div>
+      </section>
+      <footer>&copy; AMD's Website | <a href="https://www.facebook.com/profile.php?id=100068452298220" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/svarta_shunon" class="fa fa-twitter"></a> 
+        <a href="https://www.instagram.com/sheriff702/" class="fa fa-instagram"></a> </footer>
+    </main>
   </body>
 </html>
