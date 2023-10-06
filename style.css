@@ -24,7 +24,6 @@ body {
   padding: 35px 0;
   display: flex;
   justify-content: flex-end;
-  
 }
 .logo {
   width: 100px;
@@ -52,7 +51,6 @@ body {
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
- 
 }
 .navbar ul li::after {
   content: "";
@@ -86,29 +84,33 @@ body {
   text-transform: uppercase;
   font-size: 0.8rem;
 }
-
-
+.banner{
+  margin-bottom: 170px;
+}
 
 .content {
   width: 100%;
-  position: relative;
   top: 50%;
   transform: translateY(-50%);
-  text-align: center;
+  text-align: center; 
   color: #fff;
-  margin-top: 100px;
-  padding-bottom: 50px;
+ 
+  
 }
 .front {
+  
   display: flex;
   justify-content: center;
+  align-items: center;
+ 
   flex-wrap: wrap;
+  
 }
 .paragraph {
   font-weight: 100;
   line-height: 25px;
   font-size: x-large;
-  z-index: 1;
+  
 }
 em {
   color: greenyellow;
@@ -165,7 +167,6 @@ button:hover {
   color: #22e81f;
   pointer-events: none;
   text-decoration: underline;
- 
 }
 .playlisthead h1 {
   font-size: 100px;
@@ -191,11 +192,10 @@ button:hover {
   flex-wrap: wrap;
 }
 
-
-
 .spotify-embed iframe {
   width: 100%;
-  height: 166px;margin-bottom: 20px;
+  height: 166px;
+  margin-bottom: 20px;
 }
 
 .playlists-container {
@@ -204,14 +204,11 @@ button:hover {
   justify-content: center;
   align-items: center;
   gap: 10px;
-
 }
 
 .custom-iframe {
   border-radius: 12px;
 }
-
-
 
 svg {
   font-family: "Russo One", sans-serif;
@@ -229,9 +226,16 @@ svg text {
   white-space: nowrap;
 }
 
-section {
-  margin: 20px;
-  
+
+#section1{
+  padding-top: 100px;
+  margin-bottom: 150px;
+}
+#section2 {
+  margin-bottom: 250px;
+}
+#section3{
+  margin-bottom: 50px;
 }
 
 footer {
@@ -314,36 +318,37 @@ footer {
     /* Change the grid layout for smaller screens */
     grid-template-columns: 1fr; /* Stack items vertically */
     grid-auto-flow: dense;
-    
   }
 
   .playlists-container-playlist {
     width: 100%;
-    margin-bottom: 30px; 
+    margin-bottom: 30px;
     flex-wrap: wrap;
-   flex-direction: row;
+    flex-direction: row;
   }
-  .paragraph{
+  .paragraph {
     font-size: 1rem;
     font-weight: bold;
   }
   svg text {
     font-size: 210px;
-    
-    height: 100%; 
+
+    height: 100%;
     white-space: normal;
   }
   .front svg {
     /* Adjust the viewBox for smaller screens */
     width: 100%;
     height: auto;
-    
   }
   footer {
-    padding: 10px; 
+    padding: 10px;
   }
   .fa {
     font-size: 20px; /* Decrease font size for social icons */
     padding: 10px; /* Reduce padding for social icons */
+  }
+  #section1{
+    margin-bottom: 270px;
   }
 }
