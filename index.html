@@ -18,10 +18,9 @@
   <body>
     <div class="banner">
       <div class="navbar">
-        <img src="amd new.png" alt="logo" class="logo" />
+         <a class="logo" href="#"><img src="amd new.png" alt="logo" class="logo" /></a> 
         <ul class="nav-links">
           <li><a href="#section1">Home</a></li>
-          <p class="navbarline">|</p>
           <li><a href="#section3">Contact</a></li>
         </ul>
       </div>
@@ -33,7 +32,7 @@
         <div class="content">
           <svg class="front" viewBox="0 0 3200 300">
             <text x="50%" y="50%" dy=".35em" text-anchor="middle">
-              Welcome to  AMD's Website
+              Welcome to AMD's Website
             </text>
           </svg>
           <div class="paragraph">
@@ -51,6 +50,7 @@
           </div>
         </div>
       </section>
+      <section id="section4"></section>
       <section id="section2">
         <!-- Content for the second section -->
         <div>
@@ -135,7 +135,13 @@
               AMD@hypercity.se
             </ol>
           </ul>
-          <img class="ceo" src="CEO1.JPG" alt="ceo" />
+          <div class="cardholder">
+            <div class="card"><img class="ceo" src="CEO1.JPG" alt="ceo" /></div>
+          </div>
+          
+
+          <!--<img class="ceo" src="CEO1.JPG" alt="ceo" />-->
+          
         </div>
       </section>
       <footer>
@@ -153,3 +159,31 @@
     </main>
   </body>
 </html>
+
+<!--@keyframes wave {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(5px) rotate(10deg);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(-5px) rotate(-10deg);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+background-image: linear-gradient(
+    var(--rotate)
+    , #5ddcff, #3c67e3 43%, #4e00c2);
+    position: absolute;
+    z-index: -1;
+    top: -1%;
+    left: -2%;
+    animation: spin 2.5s linear infinite;
+    border-top-left-radius: 35%;-->
