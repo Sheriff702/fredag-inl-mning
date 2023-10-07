@@ -319,6 +319,7 @@ footer {
   .navbar .logo {
     float: none;
     margin: 0 auto; 
+    opacity: 0.7;
   }
   svg text {
     font-size: 50px;
