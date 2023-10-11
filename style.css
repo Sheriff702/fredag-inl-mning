@@ -405,10 +405,9 @@ footer {
     padding-bottom: 200px;
     flex-wrap: wrap;
     flex-direction: row;
-    
+    padding-left: 10px;
+    padding-right: 10px;
     border-radius: 1px;
-
-   
   }
   #section5{
     margin-bottom: 1300px;
